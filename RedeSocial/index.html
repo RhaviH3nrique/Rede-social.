@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Zinkr</title>
+</head>
+
+
+<body>
+  <header>
+    <img src="./assets//logo.svg" alt="Zinkr">
+  </header>
+  <main class="main">
+
+    <!-- Formulário de postagem -->
+    <div class="newPost">
+
+      <div class="infoUser">
+        <div class="imgUser">
+        </div>
+        <strong>Rhavi</strong>
+      </div>
+
+      <form action="" class="formPost" id="formPost">
+        <textarea name="textarea" placeholder="Oque será que o Luan vai passar na quinta??" id="textarea"></textarea>
+        <div class="iconsAndButton">
+          <div class="icons">
+            <button class="btnFileForm">
+              <img src="./assets/img.svg" alt="Adicionar uma imagem">
+            </button>
+            <button class="btnFileForm">
+              <img src="./assets/gif.svg" alt="Adicionar um gif">
+            </button>
+            <button class="btnFileForm">
+              <img src="./assets/video.svg" alt="Adicionar um vídeo">
+            </button>
+          </div>
+
+          <button type="submit" id="botao" class="btnSubmitForm">Publicar</button>
+        </div>
+      </form>
+
+    </div>
+
+    <ul class="posts">
+      <li class="post">
+
+     <div class="infoUserPost">
+      
+      <div class="imgUserPost"></div>
+
+      <div class="nameAndHour">
+        <strong>Pedro Henrique</strong>
+        <p>21h</p>
+      </div>
+     </div>
+     <p>Acho que será um projeto novo. </p>
+
+     <div class="actionBtnPost">
+     <button type="button" class="filesPost like"><img src="assets/heart.svg" alt="Curtir">Curtir</button>
+     <button type="button" class="filesPost comment"><img src="assets/comment.svg" alt="Comentar">Comentar</button>
+     <button type="button" class="filesPost share"><img src="assets/share.svg" alt="Compartilhar">Compartilhar</button>
+
+
+     </div>
+      </li>
+
+      <li class="post">
+        <div class="infoUserPost">
+         <div class="imgUserPost"></div>
+   
+         <div class="nameAndHour">
+           <strong>Fake do Luan</strong>
+           <p>10h</p>
+         </div>
+        </div>
+        <p>Será que e mermo? </p>
+   
+        <div class="actionBtnPost">
+        <button type="button" class="filesPost like"><img src="assets/heart.svg" alt="Curtir">Curtir</button>
+        <button type="button" class="filesPost comment"><img src="assets/comment.svg" alt="Comentar">Comentar</button>
+        <button type="button" class="filesPost share"><img src="assets/share.svg" alt="Compartilhar">Compartilhar</button>
+   
+   
+        </div>
+         </li>
+
+         <li class="post">
+          
+          <div class="infoUserPost">
+           <div class="imgUserPost"></div>
+     
+           <div class="nameAndHour">
+             <strong>Henrique</strong>
+             <p>9h</p>
+           </div>
+          </div>
+          <p>Vou e dormir </p>
+     
+          <div class="actionBtnPost">
+          <button type="button" class="filesPost like"><img src="assets/heart.svg" alt="Curtir">Curtir</button>
+          <button type="button" class="filesPost comment"><img src="assets/comment.svg" alt="Comentar">Comentar</button>
+          <button type="button" class="filesPost share"><img src="assets/share.svg" alt="Compartilhar">Compartilhar</button>
+     
+     
+          </div>
+           </li>
+    </ul>
+
+  </main>
+  <script type="module" src="/Controllers/FormPost.js"></script>
+
+</html>
